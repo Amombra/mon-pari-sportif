@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Connexion</title>
+	<meta charset="utf-8">
+	<meta charset="utf-8">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.6/css/mdb.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+	<link rel="stylesheet"  href="{% static 'css/compteur.css' %}">
+	<link rel="stylesheet"  href="{% static 'css/style.css' %}">
+	<link rel="stylesheet"  href="{% static 'css/slide.css' %}">
+
+	<link rel="stylesheet"  href="{% static 'css/animate.css' %}">
+	<link rel="stylesheet"  href="{% static 'css/bootstrap.min.css' %} ">
+</head>
+	<body class="register-img">
+
+		<div class="container ">
+        <h1 class="regis"><center>LOGIN</center></h1>
+
+        <br><br>
+			<div class="row">
+				<div class="card ml-5 repositionner shadow">
+                        <form method="POST" action="{% url 'mylog' %}">
+                        {% csrf_token %}
+                            <div class="card-body mx-2 mt-1">
+
+                                <div class="md-form">
+                                <label class="lab-1">Your username</label><br><br><br>
+                                    <input type="text" id="username" name="username" class="form-control">
+                                </div>
+
+                                <div class="md-form">
+                                 <label class="lab-1">Your password</label><br><br><br>
+                                    <input type="password" id="password" name="password" class="form-control">
+                                </div>
+
+                                <div class="text-center mb-4">
+                                    <input type="submit" value="Se Connecter" class="btn btn-primary btn-rounded waves-effect waves-light">
+
+
+                                </div>
+                        
+                                <p class="font-small grey-text d-flex justify-content-center">Don't have an account?
+                                    <a href="/register" class="dark-grey-text font-weight-bold ml-1"> Sign up</a>
+                                </p>
+
+                        </form>
+                        
+                            </div>
+
+                        </div>
+			</div>
+		</div>
+	</body>
+</html>

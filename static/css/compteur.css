@@ -1,0 +1,187 @@
+.ss {
+    margin-top: 30px;
+    background-color:rgba( 238,198,10,.9);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.pr
+{
+    color: #000;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-family: Caleuche-RegularOblique;
+}
+.counter {
+    
+    padding: 20px 0;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.count-title {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.count-text {
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #000;
+}
+
+.fa-2x {
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #4ad1e5;
+}
+
+.souligner
+{
+    height: 5px;
+    background-color: #fff;
+    margin-top: 20px;
+    width: 100px;
+    margin-left: 45px;
+}
+
+
+.angelic
+{
+    color: orange;
+    font-weight: bold;
+    font-size: 70px;
+    position: absolute;
+    left:20%;
+    top: 30%;
+    text-shadow: -9px 9px 7px #000;
+
+}.angelicss
+{
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+    position: absolute;
+    left:20%;
+    top: 30%;
+    text-shadow: -9px 9px 7px #000;
+    font-style: italic;
+}
+
+
+.Steelers
+{
+    color:red;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-left: 20%;
+}
+
+.Steelerss
+{
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-left: 15%;
+    color: #fff;
+    background-color: rgb(1, 2, 46);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.Steelersss
+{
+    color: red;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-left: 15%;
+}
+
+.match
+{
+    margin-top:30px;
+    background-color: #fff;
+    height: 110px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: 0 0 8px #000;
+    font-weight: bold;
+    font-size: 20px;
+    border-width: 5px;
+    color:#000;
+    margin-bottom: 5px;
+}
+.fond{
+	width: 100%;
+	background-image: url(../images/bg.png);
+	background-size: cover;
+}
+.tout{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    /*font-style: italic;*/
+    font-weight: bold;
+    font-size: 40px;
+    color:#000;
+    position: absolute;
+    top:7%;
+    left: 50%;
+}
+.result{
+    width: 100%;
+	background-image: url(../images/popup-bg.jpg);
+    background-size: cover;
+    height: 700px;
+}
+.t {
+    max-height: 320px;
+    width: 400%;
+}
+
+.mon-bouton{
+    background-color: green;
+    padding-left:30px;
+    padding-right: 30px;
+    padding-top:13px;
+    padding-bottom: 13px;
+    color: #fff;
+    font-weight: bold;
+    border-width:3px;
+    border-color: green;
+    border-style: solid;
+
+}
+.regis{
+    color:#fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.pt{
+    position: absolute;
+    top:20%;
+    left:45%;
+}
+.ligne{
+    color:green;
+}
+.les_entrees{
+	border-width: 5px;
+	border-style: solid;
+	border-color: #000;
+	padding:20px;
+	padding-right: 40px;
+	position: absolute;
+	left: 37%;
+}

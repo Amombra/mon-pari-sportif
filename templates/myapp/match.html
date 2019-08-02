@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enregistrement de match</title>
+	<meta charset="utf-8">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.6/css/mdb.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+	<link rel="stylesheet"  href="{% static 'css/compteur.css' %}">
+	<link rel="stylesheet"  href="{% static 'css/style.css' %}">
+	<link rel="stylesheet"  href="{% static 'css/slide.css' %}">
+
+	<link rel="stylesheet"  href="{% static 'css/animate.css' %}">
+	<link rel="stylesheet"  href="{% static 'css/bootstrap.min.css' %} ">
+	
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<form method="POST" action="" class="les_entrees">
+            {% csrf_token %}
+				<div class="col-lg-12 col-md-6 col-sm-12">
+					<label>Equipe A</label>
+					<input type="text" name="equA" placeholder="Nom de l'Equipe ..." class="form-control">
+				</div>
+
+				<div class="col-lg-12 col-md-6 col-sm-12">
+					<label>Equipe B</label>
+					<input type="text" name="equB" placeholder="Nom de l'Equipe ..." class="form-control">
+				</div>
+
+				<div class="col-lg-12 col-md-6 col-sm-12">
+					<label>Score Equipe A</label>
+					<input type="number" name="scA" placeholder="Score de l'Equipe ..." class="form-control">
+				</div>
+
+				<div class="col-lg-12 col-md-6 col-sm-12">
+					<label>Score Equipe B</label>
+					<input type="number" name="scB" placeholder="Score de l'Equipe ..." class="form-control">
+				</div>
+
+				<div>
+					<center><input type="submit" value="Valider" name="" class="btn btn-success"></center>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

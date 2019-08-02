@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Paris effectués</title>
+    <meta charset="utf-8">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.6/css/mdb.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+	<link rel="stylesheet"  href="{% static 'css/compteur.css' %}">
+	<link rel="stylesheet"  href="{% static 'css/style.css' %}">
+	<link rel="stylesheet"  href="{% static 'css/slide.css' %}">
+
+	<link rel="stylesheet"  href="{% static 'css/animate.css' %}">
+	<link rel="stylesheet"  href="{% static 'css/bootstrap.min.css' %} ">
+</head>
+<body>
+	<body>
+	<h1><center><b>Les Matchs </b></center></h1>
+	<div class="container">
+		<div class="row">
+                <table class="table table-bordered">
+                    <thead>
+                        <th>N°</th>
+                        <th>resultat</th>
+                        <th>Choix vainqueur</th>
+                        <th>Joueur</th>
+
+                    </thead>
+                    <tbody>
+                        {% for element in choixs%}
+                            <tr>
+                                <td><button type="button" class="btn btn-success waves-effect waves-light ">{{ element.id }}</button></td>
+                                <td><button type="button" class="btn btn-primary btn-lg btn btn-outline-secondary waves-effect">{{element.resultat}}</button></td>
+                                <td><button type="button" class=" btn btn-primary btn-lg btn btn-outline-secondary waves-effect">{{element.preference}}</button></td>
+                                <td><button type="button" class=" btn boutons">{{element.utilisateur}}</button></td>
+                                
+                            </tr>
+                            {% endfor %}
+                    </tbody>
+                </table>
+		</div>
+	</div>
+</body>
+</body>
+</html>

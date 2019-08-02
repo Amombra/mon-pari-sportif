@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profil</title>
+	<meta charset="utf-8">
+	<meta charset="utf-8">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.6/css/mdb.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+	<link rel="stylesheet"  href="{% static 'css/compteur.css' %}">
+	<link rel="stylesheet"  href="{% static 'css/style.css' %}">
+	<link rel="stylesheet"  href="{% static 'css/slide.css' %}">
+
+	<link rel="stylesheet"  href="{% static 'css/animate.css' %}">
+	<link rel="stylesheet"  href="{% static 'css/bootstrap.min.css' %} ">
+</head>
+<body>
+<section>
+
+			<div class="headers">
+				<ul>
+					<li><a href="/">HOME</a></li>
+					<li><a href="/scrap">PARIER</a></li>
+					<li><a href="/affichage">PARIER</a></li>
+					<li><a href="/form">Paris effectués</a></li>
+					<li><a href="#">[{{user}} Connecté]</a></li>
+				</ul>
+			</div>
+				
+
+<h6 class="ligne"> {{user}} est en ligne **</h6>
+
+<a href="{% url 'mylogout' %}">Deconnexion</a>
+<section>
+        <div class="container ">
+            <div class="row pt">
+                <div class="card forum-card-img-64 text-center mb-4 place">
+                                    <div class="card-header">Mon Profile</div>
+                    <div class="mt-4">
+                                <img src="https://secure.gravatar.com/avatar/2b39ff6018cd76cea2774909f7d56694?s=96&amp;d=mm&amp;r=g" alt="" class="rounded-circle mr-2">
+                            </div>
+                    <div class="card-body">
+
+                        <h5 class="card-title font-weight-bold">
+                            <a href="#">Name: {{user}}</a><br>
+                        </h5>
+                    </div>
+                        </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
